@@ -1,0 +1,36 @@
+﻿@model EventoSensorViewModel
+@{
+    ViewBag.Title = "Tabela";
+}
+
+<h2>Eventos Sensores</h2>
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.EventosSensoresVO.FirstOrDefault().Tag)</th>
+        <th>@Html.DisplayNameFor(model => model.EventosSensoresVO.FirstOrDefault().Valor)</th>
+        <th>@Html.DisplayNameFor(model => model.EventosSensoresVO.FirstOrDefault().Status)</th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.EventosSensoresVO)
+    {
+<tr>
+    <td>@Html.DisplayFor(modelItem => item.Tag)</td>
+    <td>@Html.DisplayFor(modelItem => item.Valor)</td>
+    <td>@Html.DisplayFor(modelItem => item.Status)</td>
+
+</tr>
+    }
+</table>
+
+<script type="text/javascript">
+    function timedRefresh(timeoutPeriod) {
+        setTimeout(function () {
+            location.reload(true);
+        }, timeoutPeriod);
+    }
+</script>
+<body onload="JavaScript:timedRefresh(5000);">
+    ...
+</body>
+

@@ -1,0 +1,20 @@
+﻿{
+  "ErroDeConfiguracao": "Erro de configuração. Contate um administrador do sistema.",
+
+  "LocalidadeNaoEncontrado": "Localidade não encontrada.",
+  "PaisNaoEncontrado": "Pais não encontrada.",
+  "RegiaoNaoEncontrado": "Regiao não encontrada.",
+  "SensorNaoEncontrado": "Sensor não encontrado",
+  "EventoSensorNaoEncontrado": "Evento não encontrado.",
+
+  "Sensor.Id": "Atributo sensor: ID é obrigatório.",
+  "Sensor.TimeStamp": "Atributo sensor: TimeStamp é obrigatório.",
+  "Sensor.Tag": "Atributo sensor: Tag é obrigatório.",
+  "Sensor.Valor": "Atributo sensor: Valor é obrigatório.",
+
+  "Cache.Localidade": "Erro ao acessar cache localidade.",
+
+  "EventoSensor.Duplicado": "Propriedade: EventoSensor duplicada.",
+  "EventoSensor.Localidade": "Propriedade: Localidade não encontrada.",
+  "EventoSensor.Sensor": "Propriedade: Sensor não encontrada."
+}

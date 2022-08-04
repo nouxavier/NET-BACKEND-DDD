@@ -1,0 +1,8 @@
+﻿BEGIN;
+	SELECT _v.register_patch('000-Config', NULL, NULL);
+
+	CREATE EXTENSION IF NOT EXISTS "pgcrypto" WITH SCHEMA public;
+	CREATE EXTENSION IF NOT EXISTS "citext" WITH SCHEMA public;
+	CREATE EXTENSION IF NOT EXISTS "uuid-ossp" WITH SCHEMA public;
+
+COMMIT;
